@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install dependencies 👨🏻‍💻
-        run: pnpm ci --prefer-offline --no-audit
+        run: pnpm install
 
       - name: Run linter 👀
         run: pnpm run lint
