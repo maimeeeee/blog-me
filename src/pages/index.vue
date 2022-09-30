@@ -14,14 +14,10 @@
           <CIconButton
             mr="3"
             :icon="colorMode === 'light' ? 'moon' : 'sun'"
-            :aria-label="`Switch to ${
-              colorMode === 'light' ? 'dark' : 'light'
-            } mode`"
+            :aria-label="`Switch to ${colorMode === 'light' ? 'dark' : 'light'} mode`"
             @click="toggleColorMode"
           />
-          <CButton left-icon="info" variant-color="blue" @click="showToast">
-            Show Toast
-          </CButton>
+          <CButton left-icon="info" variant-color="blue" @click="showToast"> Show Toast </CButton>
         </CBox>
         <CAvatarGroup>
           <CAvatar
@@ -49,12 +45,7 @@
             <CAvatarBadge size="1.0em" border-color="papayawhip" bg="tomato" />
           </CAvatar>
         </CAvatarGroup>
-        <CButton
-          left-icon="close"
-          variant-color="red"
-          mt="3"
-          @click="showModal = true"
-        >
+        <CButton left-icon="close" variant-color="red" mt="3" @click="showModal = true">
           Delete Account
         </CButton>
         <CModal :is-open="showModal">
@@ -64,11 +55,7 @@
             <CModalBody>Deleting user cannot be undone</CModalBody>
             <CModalFooter>
               <CButton @click="showModal = false"> Cancel </CButton>
-              <CButton
-                margin-left="3"
-                variant-color="red"
-                @click="showModal = false"
-              >
+              <CButton margin-left="3" variant-color="red" @click="showModal = false">
                 Delete User
               </CButton>
             </CModalFooter>

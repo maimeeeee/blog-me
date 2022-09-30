@@ -11,12 +11,7 @@
   </div>
 </template>
 <script>
-import {
-  CThemeProvider,
-  CColorModeProvider,
-  CReset,
-  CBox,
-} from '@chakra-ui/vue'
+import { CThemeProvider, CColorModeProvider, CReset, CBox } from '@chakra-ui/vue'
 
 export default {
   name: 'DefaultLayout',
@@ -24,7 +19,7 @@ export default {
     CThemeProvider,
     CColorModeProvider,
     CReset,
-    CBox,
-  },
+    CBox
+  }
 }
 </script>
